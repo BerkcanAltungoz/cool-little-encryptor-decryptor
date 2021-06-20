@@ -5,7 +5,7 @@ Made By: Berkcan Altungöz - 20170808014
 Demo Link: https://youtu.be/X1WUSSxe58Y
 
 
-#!! IMPORTANT !!
+# !! IMPORTANT !!
 
 ---
 
@@ -20,7 +20,7 @@ Installing OpenJDK: https://openjfx.io/openjfx-docs/#install-java
 
 Installing JavaFX: https://openjfx.io/openjfx-docs/#install-javafx
 
-###TO ABLE TO RUN THIS APPLICATION IN YOUR IDE YOU ALSO NEED TO FOLLOW THESE INSTRUCTIONS
+### TO ABLE TO RUN THIS APPLICATION IN YOUR IDE YOU ALSO NEED TO FOLLOW THESE INSTRUCTIONS
 
 
 **!!!** This application uses **javafx.controls** & **javafx.fxml** modules
@@ -32,7 +32,7 @@ Installing JavaFX: https://openjfx.io/openjfx-docs/#install-javafx
 
 After configuring your environment you can run this application by running Main.java in the package Main.
 
-##FINDINGS
+## FINDINGS
 
 ---
 
