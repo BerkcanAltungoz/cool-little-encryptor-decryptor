@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="613.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KeyEncryption.AESController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="621.0" prefWidth="834.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Separator layoutX="417.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="613.0" prefWidth="7.0" />
+            <Label layoutX="24.0" layoutY="6.0" prefHeight="32.0" prefWidth="220.0" text="Input/Generate Key" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="keyText" layoutX="24.0" layoutY="46.0" prefHeight="220.0" prefWidth="378.0" wrapText="true" />
+            <Button fx:id="generateButton" layoutX="337.0" layoutY="273.0" mnemonicParsing="false" onAction="#generateButtonAction" text="Generate" />
+            <Label layoutX="24.0" layoutY="307.0" prefHeight="32.0" prefWidth="173.0" text="Text to Encrypt" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="encryptText" layoutX="24.0" layoutY="350.0" prefHeight="220.0" prefWidth="378.0" wrapText="true" />
+            <Label layoutX="434.0" layoutY="6.0" prefHeight="32.0" prefWidth="220.0" text="Text to Decrypt" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="434.0" layoutY="307.0" prefHeight="32.0" prefWidth="220.0" text="OUTPUT" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="outputText" editable="false" layoutX="434.0" layoutY="350.0" prefHeight="220.0" prefWidth="378.0" wrapText="true" />
+            <TextArea fx:id="decryptText" layoutX="434.0" layoutY="46.0" prefHeight="220.0" prefWidth="378.0" wrapText="true" />
+            <Button fx:id="encryptButton" layoutX="346.0" layoutY="574.0" mnemonicParsing="false" onAction="#encryptButtonAction" text="Encrypt" />
+            <Button fx:id="decryptButton" layoutX="754.0" layoutY="273.0" mnemonicParsing="false" onAction="#decryptButtonAction" text="Decrypt" />
+            <Separator layoutX="1.0" layoutY="305.0" prefHeight="0.0" prefWidth="840.0" />
+            <Button fx:id="backButton" layoutX="434.0" layoutY="573.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="26.0" prefWidth="58.0" text="Back" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

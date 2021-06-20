@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="653.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EnigmaMachine.EnigmaController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="683.0" prefWidth="874.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ComboBox fx:id="rotor1" layoutX="7.0" layoutY="35.0" prefWidth="150.0" promptText="Rotor 1" />
+            <ComboBox fx:id="set1" layoutX="195.0" layoutY="35.0" prefWidth="150.0" promptText="Setting 1" />
+            <ComboBox fx:id="offset1" layoutX="380.0" layoutY="35.0" prefWidth="150.0" promptText="Offset 1" />
+            <ComboBox fx:id="rotor2" layoutX="7.0" layoutY="122.0" prefWidth="150.0" promptText="Rotor 2" />
+            <ComboBox fx:id="set2" layoutX="195.0" layoutY="122.0" prefWidth="150.0" promptText="Setting 2" />
+            <ComboBox fx:id="offset2" layoutX="380.0" layoutY="122.0" prefWidth="150.0" promptText="Offset 2" />
+            <ComboBox fx:id="rotor3" layoutX="7.0" layoutY="207.0" prefWidth="150.0" promptText="Rotor 3 " />
+            <ComboBox fx:id="set3" layoutX="195.0" layoutY="207.0" prefWidth="150.0" promptText="Setting 3" />
+            <ComboBox fx:id="offset3" layoutX="380.0" layoutY="207.0" prefWidth="150.0" promptText="Offset 3" />
+            <Label layoutX="7.0" layoutY="7.0" text="Enter the Settings for Rotor 1">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="88.0" text="Enter the Settings for Rotor 2">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="171.0" text="Enter the Settings for Rotor 3">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Pane layoutX="1.0" layoutY="616.0" prefHeight="37.0" prefWidth="866.0" style="-fx-background-color: #d9d5d4;">
+               <children>
+                  <Button fx:id="enigmaOK" layoutX="795.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="28.0" prefWidth="65.0" text="OK" />
+                  <Button fx:id="backButton" layoutX="8.0" layoutY="5.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="28.0" prefWidth="65.0" text="Back" />
+               </children>
+            </Pane>
+            <Separator layoutX="-1.0" layoutY="85.0" prefHeight="3.0" prefWidth="559.0" />
+            <Separator layoutX="-1.0" layoutY="168.0" prefHeight="3.0" prefWidth="559.0" />
+            <Label layoutX="604.0" layoutY="5.0" prefHeight="58.0" prefWidth="234.0" text="Enter Plugboard Settings in Pairs (EF JK ..) (English Alphabet)" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="plugboardText" layoutX="568.0" layoutY="67.0" prefHeight="234.0" prefWidth="294.0" wrapText="true" />
+            <Label layoutX="8.0" layoutY="313.0" text="Enter Message to Encrypt/Decrypt (English Alphabet)">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="messageText" layoutX="8.0" layoutY="350.0" prefHeight="109.0" prefWidth="852.0" wrapText="true" />
+            <Separator layoutX="557.0" layoutY="2.0" orientation="VERTICAL" prefHeight="308.0" prefWidth="3.0" />
+            <Label layoutX="8.0" layoutY="460.0" text="OUTPUT (Always Uppercase):">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="outputText" editable="false" layoutX="8.0" layoutY="494.0" prefHeight="109.0" prefWidth="852.0" wrapText="true" />
+            <Label layoutX="9.0" layoutY="266.0" text="Select Reflector:">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Separator layoutY="254.0" prefHeight="3.0" prefWidth="559.0" />
+            <ComboBox fx:id="reflec" layoutX="178.0" layoutY="267.0" prefWidth="150.0" promptText="Reflector" />
+            <Separator layoutX="-1.0" layoutY="309.0" prefHeight="3.0" prefWidth="870.0" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
