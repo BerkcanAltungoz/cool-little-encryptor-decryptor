@@ -20,7 +20,7 @@ Installing OpenJDK: https://openjfx.io/openjfx-docs/#install-java
 
 Installing JavaFX: https://openjfx.io/openjfx-docs/#install-javafx
 
-### TO ABLE TO RUN THIS APPLICATION IN YOUR IDE YOU ALSO NEED TO FOLLOW THESE INSTRUCTIONS
+## TO ABLE TO RUN THIS APPLICATION IN YOUR IDE YOU ALSO NEED TO FOLLOW THESE INSTRUCTIONS
 
 
 **!!!** This application uses **javafx.controls** & **javafx.fxml** modules
